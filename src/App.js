@@ -52,22 +52,20 @@ class QuoteMachine extends Component {
   render() {
     return (
       <div id="body">
-        {' '}
         <div id="quote-box" className="quote-box">
-          {' '}
           <div id="text" className="quote-text">
-            {this.state.quote.text}{' '}
-          </div>{' '}
+            {this.state.quote.text}
+          </div>
           <div id="author" className="quote-author">
-            - {this.state.quote.author}{' '}
-          </div>{' '}
+            - {this.state.quote.author}
+          </div>
           <button
             id="new-quote"
             className="new-quote-button"
             onClick={this.fetchQuote}
           >
-            New Quote{' '}
-          </button>{' '}
+            New Quote
+          </button>
           <a
             id="tweet-quote"
             className="tweet-quote-button"
@@ -77,9 +75,9 @@ class QuoteMachine extends Component {
             target="_blank"
             rel="noreferrer"
           >
-            Tweet Quote{' '}
-          </a>{' '}
-        </div>{' '}
+            Tweet Quote
+          </a>
+        </div>
       </div>
     )
   }
